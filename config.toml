@@ -1,0 +1,30 @@
+baseURL = "https://gitaddremote.com/"
+languageCode = 'en-us'
+title = 'Code and the Remote Life'
+theme = 'github-style'
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "Demian"
+  description = "Sporadic thoughts on living the remote life as a software engineer."
+  github = "gitaddremote"
+  twitter = "gitaddremote"
+  linkedin = "demainseiler"
+  url = "https://gitaddremote.com"
+  keywords = "blog, google analytics"
+  rss = true
+  lastmod = true
+  favicon = "/images/github-mark.png"
+  avatar = "/images/hezeqiah-ai-graphic-avatar.jpeg"
+  headerIcon = "/images/github-mark-white.png"
+  location = "USA"
+  userStatusEmoji = "🤔"
+  enableSearch = true
+
+  [[params.links]]
+    title = "Link"
+    href = "https://github.com/gitaddremote"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
