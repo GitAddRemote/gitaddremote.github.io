@@ -10,9 +10,9 @@ pygmentsUseClasses = true
   description = "Sporadic thoughts on living the remote life as a software engineer."
   github = "gitaddremote"
   twitter = "gitaddremote"
-  linkedin = "demainseiler"
+  linkedin = "demianseiler"
   url = "https://gitaddremote.com"
-  keywords = "blog, google analytics"
+  keywords = "blog, software engineer, software development, java, javascript, spring, nestjs, typescript, sql, google analytics"
   rss = true
   lastmod = true
   favicon = "/images/github-mark.png"
@@ -21,10 +21,6 @@ pygmentsUseClasses = true
   location = "USA"
   userStatusEmoji = "🤔"
   enableSearch = true
-
-  [[params.links]]
-    title = "Link"
-    href = "https://github.com/gitaddremote"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
