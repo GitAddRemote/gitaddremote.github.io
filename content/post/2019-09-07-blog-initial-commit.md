@@ -1,7 +1,7 @@
 +++
 title = 'Git Add Remote Initial Commit'
 date = 2019-09-07T06:27:03-04:00
-draft = false
+draft = true
 [params]
   author = 'Demian Seiler'
 +++
