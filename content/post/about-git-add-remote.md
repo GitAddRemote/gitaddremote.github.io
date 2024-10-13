@@ -1,7 +1,7 @@
 +++
 title = 'About Git Add Remote'
 date = 2024-10-13T01:11:05-04:00
-draft = true
+draft = false
 [params]
   author = 'Demian Seiler'
 +++
