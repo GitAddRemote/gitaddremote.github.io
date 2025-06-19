@@ -1,7 +1,7 @@
 +++
 title = 'The Benefits of Sabbatical'
 date = 2025-01-07T01:11:05-04:00
-draft = true
+draft = false
 [params]
   author = 'Demian Seiler'
 +++
