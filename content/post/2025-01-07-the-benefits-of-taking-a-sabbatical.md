@@ -32,9 +32,9 @@ Sitting for extended periods and leading a sedentary lifestyle are occupational 
 
 #### 3. A Chance to Take That Longer Trip or Series of Trips
 
-Travel isn’t just a luxury—it’s a **booster for creative thinking**. Studies show that even recalling travel experiences can spark creativity, enhancing divergent thinking and problem-solving by exposing your brain to new perspectives :contentReference[oaicite:1]{index=1}. Take a sabbatical with meaningful travel woven in, and you'll tap into the powerful “incubation” effect—letting your brain subconsciously solve work challenges while you explore new cultures :contentReference[oaicite:2]{index=2}.
+Travel isn’t just a luxury—it’s a booster for creative thinking. Studies show that even recalling travel experiences can spark creativity, enhancing divergent thinking and problem-solving by exposing your brain to new perspectives . Take a sabbatical with meaningful travel woven in, and you'll tap into the powerful “incubation” effect—letting your brain subconsciously solve work challenges while you explore new cultures .
 
-Moreover, solid evidence from vacation research reveals that workers return with significantly improved cognitive flexibility—essentially broader thinking—from as little as a few weeks off :contentReference[oaicite:3]{index=3}. For software engineers working on global teams, these trips aren't just Instagram fuel—they’re professional development. You come back with sharper cultural insight, better communication skills, and fresh energy, often returning to code with renewed passion and a richer worldview.
+Moreover, solid evidence from vacation research reveals that workers return with significantly improved cognitive flexibility—essentially broader thinking—from as little as a few weeks off . For software engineers working on global teams, these trips aren't just Instagram fuel—they’re professional development. You come back with sharper cultural insight, better communication skills, and fresh energy, often returning to code with renewed passion and a richer worldview.
 
 #### 4. The Power of Allowing Time for Downtime
 
