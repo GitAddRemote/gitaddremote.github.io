@@ -1,26 +1,58 @@
 baseURL = "https://gitaddremote.com/"
 languageCode = 'en-us'
 title = 'Code and the Remote Life'
-theme = 'github-style'
+theme = 'devtronic-hugo-theme'
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  author = "Demian"
-  description = "Sporadic thoughts on living the remote life as a software engineer."
-  github = "gitaddremote"
-  twitter = "gitaddremote"
-  linkedin = "demianseiler"
-  url = "https://gitaddremote.com"
-  keywords = "blog, software engineer, software development, java, javascript, spring, nestjs, typescript, sql, google analytics"
-  rss = true
-  lastmod = true
-  favicon = "/images/github-mark.png"
-  avatar = "/images/hezeqiah-ai-graphic-avatar.jpeg"
-  headerIcon = "/images/github-mark-white.png"
-  location = "Remote 🌎"
-  userStatusEmoji = "🤔"
-  enableSearch = true
+author = "Demian Seiler"
+title = "Software Engineer | Founder"
+bio = "Building exciting solutions to complex problems. Passionate about all things involved with building software while living the remote life."
+description = "Sporadic thoughts on living the remote life as a software engineer."
+github = "gitaddremote"
+bluesky = "gitaddremote.bsky.social"
+twitter = "gitaddremote"
+linkedin = "demianseiler"
+url = "https://gitaddremote.com"
+keywords = "blog, software engineer, software development, java, javascript, spring, nestjs, typescript, node, nodejs, sql, architecture, computer science"
+rss = true
+lastmod = true
+favicon = "/images/github-mark.png"
+avatar = "/images/hezeqiah-ai-graphic-avatar.jpeg"
+headerIcon = "/images/github-mark-white.png"
+location = "Remote 🌎"
+userStatusEmoji = "👨🏻‍💻"
+enableSearch = true
+homePostsPerPage = 5
+archivePostsPerPage = 15
 
 [frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[menus]
+[[menus.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+[[menus.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+[[menus.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 3
+[[menus.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 4
+[[menus.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 5

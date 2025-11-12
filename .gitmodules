@@ -1,3 +1,6 @@
 [submodule "themes/github-style"]
 	path = themes/github-style
 	url = git@github.com:MeiK2333/github-style.git
+[submodule "themes/devtronic-hugo-theme"]
+	path = themes/devtronic-hugo-theme
+	url = git@github.com:GitAddRemote/devtronic-hugo-theme.git
