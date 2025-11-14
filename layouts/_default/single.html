@@ -1,0 +1,81 @@
+{{ define "main" }}
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 class="post-title" itemprop="headline">{{ .Title }}</h1>
+
+    <div class="post-meta">
+      {{- if .Date -}}
+        <div class="post-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" itemprop="datePublished">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        </div>
+      {{- end -}}
+
+      {{- if .Params.readingTime | default true -}}
+        <div class="post-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          {{ .ReadingTime }} min read
+        </div>
+      {{- end -}}
+
+      {{- if .Params.tags -}}
+        <div class="post-meta-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+          {{- range $index, $tag := .Params.tags -}}
+            {{- if $index }}, {{ end -}}
+            <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a>
+          {{- end -}}
+        </div>
+      {{- end -}}
+    </div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ .Content }}
+  </div>
+
+  {{- if or .PrevInSection .NextInSection -}}
+    <nav class="post-navigation" role="navigation" aria-label="Post navigation">
+      <hr>
+      <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        {{- if .PrevInSection -}}
+          <div>
+            <a href="{{ .PrevInSection.Permalink }}" rel="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 4px;">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+              {{ .PrevInSection.Title }}
+            </a>
+          </div>
+        {{- else -}}
+          <div></div>
+        {{- end -}}
+
+        {{- if .NextInSection -}}
+          <div style="text-align: right;">
+            <a href="{{ .NextInSection.Permalink }}" rel="next">
+              {{ .NextInSection.Title }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-left: 4px;">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+        {{- end -}}
+      </div>
+    </nav>
+  {{- end -}}
+</article>
+{{ end }}
