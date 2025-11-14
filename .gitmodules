@@ -4,3 +4,4 @@
 [submodule "themes/devtronic-hugo-theme"]
 	path = themes/devtronic-hugo-theme
 	url = git@github.com:GitAddRemote/devtronic-hugo-theme.git
+	branch = main
